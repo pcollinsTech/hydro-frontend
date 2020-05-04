@@ -37,7 +37,9 @@ class NavBar extends Component {
     return (
       
       <div className='nav-wrapper'>
+
         <Navbar sticky='top' id='navbar' expand='lg' className='navbar navbar-expand-lg ' collapseOnSelect={true}>
+        <Container>
          <Navbar.Brand>
             <Link to='/'>
               <span>C</span>ryto<span>C</span>oach
@@ -97,6 +99,7 @@ class NavBar extends Component {
           </Nav>
          
           
+          </Container>
         </Navbar>
       </div>
     );
