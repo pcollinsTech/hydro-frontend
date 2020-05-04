@@ -35,8 +35,14 @@ class NavBar extends Component {
   }
   render() {
     return (
+      
       <div className='nav-wrapper'>
         <Navbar sticky='top' id='navbar' expand='lg' className='navbar navbar-expand-lg ' collapseOnSelect={true}>
+         <Navbar.Brand>
+            <Link to='/'>
+              <span>C</span>ryto<span>C</span>oach
+            </Link>
+          </Navbar.Brand>
           <Nav className='ml-auto'>
             <Nav.Item>
               <Link to='/' className='nav-link' onClick={this.closeNavbar}>
@@ -74,9 +80,7 @@ class NavBar extends Component {
                                 </NavDropdown> */}
 
             <Nav.Item>
-              <Link to='/exchange-finder' offset={-70} duration={800} className='nav-link' onClick={this.closeNavbar}>
-                Exchange Finder
-              </Link>
+              
             </Nav.Item>
 
             <Nav.Item>
@@ -91,11 +95,7 @@ class NavBar extends Component {
               </Link>
             </Nav.Item>
           </Nav>
-          <Navbar.Brand>
-            <Link to='/'>
-              <span>C</span>ryto<span>C</span>oach
-            </Link>
-          </Navbar.Brand>
+         
           
         </Navbar>
       </div>
