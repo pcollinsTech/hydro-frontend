@@ -1,15 +1,23 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Welcome from "../components/Welcome";
-import ContactUs from "../components/ContactUs";
+import Services from "../components/Services";
 import Layout from "../layout/Layout";
+import MemberOption from "../components/MemberOption";
+import ReviewText from "../components/ReviewText";
+import ImageCarousel from "../components/ImageCarousel";
+import BookNow from "../components/BookNow";
 
-const Index = props => {
+const Index = (props) => {
   return (
     <Layout props={props}>
       <Banner />
-      <Welcome />
-      <ContactUs />
+      <Services />
+      <br />
+      <MemberOption />
+      <ReviewText />
+      <ImageCarousel />
+      <br />
+      <BookNow />
     </Layout>
   );
 };
