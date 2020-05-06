@@ -1,5 +1,45 @@
 import React from "react";
 import welcome1 from "../../images/pexels-photo-2.jpeg";
+import Service from "./Service";
+const data = [
+  {
+    id: 1,
+    title: "Canoeing",
+    description: "lorem asdasdada",
+    img: welcome1,
+  },
+  {
+    id: 2,
+    title: "Climbing",
+    description: "lorem asdasdada",
+    img: welcome1,
+  },
+  {
+    id: 3,
+    title: "SWimming",
+    description: "lorem asdasdada",
+    img: welcome1,
+  },
+  {
+    id: 4,
+    title: "Hiking",
+    description: "lorem asdasdada",
+    img: welcome1,
+  },
+  {
+    id: 5,
+    title: "Hiking",
+    description: "lorem asdasdada",
+    img: welcome1,
+  },
+  {
+    id: 6,
+    title: "Hiking",
+    description: "lorem asdasdada",
+    img: welcome1,
+  },
+];
+
 const Welcome = () => {
   return (
     <React.Fragment>
@@ -16,48 +56,9 @@ const Welcome = () => {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-sm-4 service_card">
-              <img width="250" height="250" src={welcome1} alt="welcome1" />
-              <button type="button" class="btn btn-primary btn-sm">
-                View
-              </button>
-            </div>
-            <div className="col-sm-4 service_card">
-              <img width="250" height="250" src={welcome1} alt="welcome1" class="rounded" />
-              <button type="button" class="btn btn-primary btn-sm">
-                View
-              </button>
-            </div>
-
-            <div className="col-sm-4 service_card">
-              <img width="250" height="250" src={welcome1} alt="welcome1" class="rounded" />
-              <button type="button" class="btn btn-primary btn-sm">
-                View
-              </button>
-            </div>
-          </div>
-          <br />
-          <div className="row">
-            <div className="col-sm-4 service_card">
-              <img width="250" height="250" src={welcome1} alt="welcome1" class="rounded" />
-              <button type="button" class="btn btn-primary btn-sm">
-                View
-              </button>
-            </div>
-
-            <div className="col-sm-4 service_card">
-              <img width="250" height="250" src={welcome1} alt="welcome1" class="rounded" />
-              <button type="button" class="btn btn-primary btn-sm">
-                View
-              </button>
-            </div>
-
-            <div className="col-sm-4 service_card">
-              <img width="250" height="250" src={welcome1} alt="welcome1" class="rounded" />
-              <button type="button" class="btn btn-primary btn-sm">
-                View
-              </button>
-            </div>
+            {data.map((activity) => (
+              <Service img={activity.img} title={activity.title} />
+            ))}
           </div>
         </div>
       </section>
