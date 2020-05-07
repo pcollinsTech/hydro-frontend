@@ -16,7 +16,7 @@ const data = [
   },
   {
     id: 3,
-    title: "SWimming",
+    title: "Swimming",
     description: "lorem asdasdada",
     img: welcome1,
   },

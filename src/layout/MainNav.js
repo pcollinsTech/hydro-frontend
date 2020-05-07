@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { NavDropdown, Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../images/hydro-logo.jpeg";
 import NavItem from "./NavItem";
+import { FaRegCalendarAlt } from "react-icons/fa";
 
 class NavBar extends Component {
   render() {
@@ -42,7 +43,7 @@ class NavBar extends Component {
                 <NavItem path="/">Events</NavItem>
               </Nav>
               <button type="button" class="btn btn-primary btn-sm">
-                Book Now
+                <FaRegCalendarAlt /> Book Now
               </button>
             </Container>
           </Navbar>

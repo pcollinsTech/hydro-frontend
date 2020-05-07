@@ -15,7 +15,7 @@ This files table contents are outlined below>>>>>
 ** - Default CSS
 ** - Preloader Area CSS
 ** - Navbar Area CSS
-** - Main Banner Area CSS
+** - Banner Area CSS
 ** - Services Area CSS
 ** - Member Option Area CSS
 ** - ImageCarousel Area CSS
@@ -285,6 +285,32 @@ Navbar Area CSS
     padding: 0 14px;
   }
 }
+
+/*================================================
+Banner Area CSS
+=================================================*/
+.banner {
+  background-image: url("../images/banners/home.png");
+  height: 80vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    color: white;
+  }
+  .btn-primary {
+    background-color: transparent;
+    border: none;
+  }
+  .btn-secondary {
+    background-color: rgb(8, 40, 110);
+    border-color: rgb(8, 40, 110);
+    height: 30px;
+    width: 120px;
+    font-size: 13px;
+  }
+}
+
 /*================================================
 Services Area CSS
 =================================================*/
@@ -294,8 +320,10 @@ Services Area CSS
     background-color: #28b0e6;
     border-color: #28b0e6;
     height: 40px;
-    width: 240px;
+    width: 250px;
     font-size: 16px;
+    position: relative;
+    right: 7px;
   }
   h2 {
     color: #28b0e6;
