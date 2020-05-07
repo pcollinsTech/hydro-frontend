@@ -2,34 +2,44 @@ import React from "react";
 import {
   BrowserRouter as Router,
   // Switch,
-  Route
+  Route,
 } from "react-router-dom";
-// import Coins from './components/Coins';
-// import Coin from './components/Coin';
-import "./sass/app.scss";
+import "./assets/sass/app.scss";
 
 //Pages
 import Index from "./pages/index";
-import About from "./pages/about";
-import GetStarted from "./pages/getStarted";
-import Academy from "./pages/academy";
-import Blog from "./pages/blog";
-import PostState from "./context/post/PostState";
-import Article from "./components/Article";
+import About from "./pages/groups";
+import GetStarted from "./pages/play";
+import Stays from "./pages/stays";
+import Explore from "./pages/explore";
+import Events from "./pages/events";
+import ActivityState from "./context/activity/ActivityState";
 
 const App = () => {
   // const searchExchanges = state => {};
   return (
-      <PostState>
-        <Router>
-          <Route exact path="/" render={props => <Index {...props} />} />
-          <Route exact path="/academy" render={props => <Academy {...props} />} />
-          <Route exact path="/get-started" render={props => <GetStarted {...props} />} />
-          <Route exact path="/about" render={props => <About {...props} />} />
-          <Route exact path="/blog" render={props => <Blog {...props} />} />
-          <Route exact path="/blog/:slug" render={props => <Article {...props} />} />
-        </Router>
-      </PostState>
+    <ActivityState>
+      <Router>
+        <Route exact path="/" render={(props) => <Index {...props} />} />
+        <Route exact path="/stays" render={(props) => <Stays {...props} />} />
+        <Route
+          exact
+          path="/get-started"
+          render={(props) => <GetStarted {...props} />}
+        />
+        <Route exact path="/about" render={(props) => <About {...props} />} />
+        <Route
+          exact
+          path="/explore"
+          render={(props) => <Explore {...props} />}
+        />
+        <Route
+          exact
+          path="/events/:slug"
+          render={(props) => <Events {...props} />}
+        />
+      </Router>
+    </ActivityState>
   );
 };
 

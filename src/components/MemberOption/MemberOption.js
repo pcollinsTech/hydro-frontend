@@ -1,5 +1,5 @@
 import React from "react";
-import lifevest from "../../images/lifevest.jpg";
+import lifevest from "../../assets/images/lifevest.jpg";
 const MemberOption = () => {
   return (
     <React.Fragment>
@@ -12,7 +12,10 @@ const MemberOption = () => {
                   <b>GET YOUR HYDRO PASS TODAY</b>
                 </h2>
                 <br />
-                <p>Get Access to all our hydro activities for one year including wet suit hire</p>
+                <p>
+                  Get Access to all our hydro activities for one year including
+                  wet suit hire
+                </p>
                 <br />
                 <p>Prices Start from just £99 per year</p>
                 <br />

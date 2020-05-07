@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundImage from "../../images/booknow_background.png";
+import BackgroundImage from "../../assets/images/booknow_background.png";
 
 const BookNow = () => {
   return (

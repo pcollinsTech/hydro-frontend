@@ -1,6 +1,6 @@
 import React from "react";
 import { UncontrolledCarousel } from "reactstrap";
-import photo3 from "../../images/pexels-photo-3.jpeg";
+import photo3 from "../../assets/images/pexels-photo-3.jpeg";
 
 const items = [
   {

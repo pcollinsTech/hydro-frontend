@@ -1,5 +1,5 @@
 import React from "react";
-import welcome1 from "../../images/pexels-photo-2.jpeg";
+import welcome1 from "../../assets/images/pexels-photo-2.jpeg";
 import Service from "./Service";
 const data = [
   {
