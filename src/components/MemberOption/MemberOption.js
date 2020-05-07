@@ -1,5 +1,6 @@
 import React from "react";
 import lifevest from "../../assets/images/lifevest.jpg";
+
 import "./member.module.css";
 const MemberOption = () => {
   return (
@@ -22,7 +23,7 @@ const MemberOption = () => {
                 </button>
               </div>
             </div>
-            <div className={"col-sm-4"}>
+            <div className={"col-3"}>
               <img src={lifevest} alt="welcome1" />
             </div>
           </div>
