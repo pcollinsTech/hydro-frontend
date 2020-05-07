@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { NavDropdown, Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/images/hydro-logo.jpeg";

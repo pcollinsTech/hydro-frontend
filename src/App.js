@@ -12,8 +12,8 @@ import About from "./pages/groups";
 import GetStarted from "./pages/play";
 import Stays from "./pages/stays";
 import Explore from "./pages/explore";
+import Events from "./pages/events";
 import ActivityState from "./context/activity/ActivityState";
-import Events from "./components/Events";
 
 const App = () => {
   // const searchExchanges = state => {};

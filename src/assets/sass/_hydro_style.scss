@@ -371,32 +371,21 @@ Footer Area CSS
     font-size: 14px;
   }
   ul {
-    text-align: right;
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   li {
-    display: inline-block;
-    position: relative;
-    font-size: 14px;
-    padding-left: 17px;
     &::before {
       content: "";
-      position: absolute;
-      left: 5px;
-      top: 5px;
-      background: #ffffff;
-      width: 2px;
-      height: 12px;
     }
     &:first-child::before {
       display: none;
     }
     a {
-      color: #d5d5d5;
+      color: white;
       &:hover {
-        color: $template_color;
+        color: $white;
       }
     }
   }

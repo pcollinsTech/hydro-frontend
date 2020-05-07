@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import LogoBlue from "../assets/images/hydro-logo-blue.png";
 import { Link } from "react-router-dom";
+import moment from "moment";
+
+import LogoBlue from "../assets/images/hydro-logo-blue.png";
 
 const Footer = () => {
   return (
@@ -19,7 +21,11 @@ const Footer = () => {
               <p>Icon / Icon / Icon</p>
             </div>
 
-            {/* Use the Subscribe Component here */}
+            {/* 
+            
+               *** Use the Subscribe Component here***
+          
+          */}
 
             <div className="col-sm-4">
               <h4>
@@ -51,11 +57,8 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="tel:02895 920221">02895 920221</a>
-                    </li>
-                    <li>
-                      <a href="maileto:info@letsgohydro.com" target="__blank">
-                        info@letsgohydro.com
+                      <a href="tel:02895 920221">
+                        <span>A - </span>02895 920221
                       </a>
                     </li>
                   </ul>
@@ -115,40 +118,40 @@ const Footer = () => {
                   <h4>Stay</h4>
                   <ul>
                     <li>
-                      <a href="">Glamping Pods</a>
+                      <Link to="/">Glamping Pods</Link>
                     </li>
                     <li>
-                      <a href="">Safari Lodges</a>
+                      <Link to="/">Safari Lodges</Link>
                     </li>
                     <li>
-                      <a href="">lake Pod</a>
+                      <Link to="/">lake Pod</Link>
                     </li>
                     <li>
-                      <a href="">Houseboat</a>
+                      <Link to="/">Houseboat</Link>
                     </li>
                     <li>
-                      <a href="">IgluHut</a>
+                      <Link to="/">IgluHut</Link>
                     </li>
                     <li>
-                      <a href="">Forest Domes</a>
+                      <Link to="/">Forest Domes</Link>
                     </li>
                     <li>
-                      <a href="">Luxury Glamping Pods</a>
+                      <Link to="/">Luxury Glamping Pods</Link>
                     </li>
                     <li>
-                      <a href="">Meadow Pods</a>
+                      <Link to="/">Meadow Pods</Link>
                     </li>
                     <li>
-                      <a href="">Hedge Village Pods</a>
+                      <Link to="/">Hedge Village Pods</Link>
                     </li>
                     <li>
-                      <a href="">Tree Garden Pods</a>
+                      <Link to="/">Tree Garden Pods</Link>
                     </li>
                     <li>
-                      <a href="">Caravan Park</a>
+                      <Link to="/">Caravan Park</Link>
                     </li>
                     <li>
-                      <a href="">Tents</a>
+                      <Link to="/">Tents</Link>
                     </li>
                   </ul>
                 </div>
@@ -156,36 +159,36 @@ const Footer = () => {
                   <h4>Explore</h4>
                   <ul>
                     <li>
-                      <a href="">Towpath</a>
+                      <Link to="/">Towpath</Link>
                     </li>
                     <li>
-                      <a href="">Playpark</a>
+                      <Link to="/">Playpark</Link>
                     </li>
                   </ul>
                   <br />
                   <h4>About Us</h4>
                   <ul>
                     <li>
-                      <a href="">History</a>
+                      <Link to="/">History</Link>
                     </li>
                     <li>
-                      <a href="">Contact Us</a>
+                      <Link to="/">Contact Us</Link>
                     </li>
                   </ul>
                   <br />
                   <h4>Important Links</h4>
                   <ul>
                     <li>
-                      <a href="">Privacy Policy</a>
+                      <Link to="/">Privacy Policy</Link>
                     </li>
                     <li>
-                      <a href="">Terms & Conditions</a>
+                      <Link to="/">Terms & Conditions</Link>
                     </li>
                     <li>
-                      <a href="">Opening Times</a>
+                      <Link to="/">Opening Times</Link>
                     </li>
                     <li>
-                      <a href="">Health & Safety</a>
+                      <Link to="/">Health & Safety</Link>
                     </li>
                   </ul>
                   <br />

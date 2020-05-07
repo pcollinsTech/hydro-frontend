@@ -3,7 +3,7 @@ import React, { useReducer } from "react";
 import ActivityContext from "./activityContext";
 import ActivityReducer from "./ActivityReducer";
 import { GET_ACTIVITIES, GET_ACTIVITY, SET_LOADING } from "../types";
-import { activityData } from "./activitys";
+import { activityData } from "./activities";
 
 const ActivityState = (props) => {
   const inititalState = {
