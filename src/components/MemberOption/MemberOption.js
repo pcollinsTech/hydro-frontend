@@ -1,5 +1,6 @@
 import React from "react";
 import lifevest from "../../assets/images/lifevest.jpg";
+import "./member.module.css";
 const MemberOption = () => {
   return (
     <React.Fragment>
@@ -12,10 +13,7 @@ const MemberOption = () => {
                   <b>GET YOUR HYDRO PASS TODAY</b>
                 </h2>
                 <br />
-                <p>
-                  Get Access to all our hydro activities for one year including
-                  wet suit hire
-                </p>
+                <p>Get Access to all our hydro activities for one year including wet suit hire</p>
                 <br />
                 <p>Prices Start from just £99 per year</p>
                 <br />
@@ -24,8 +22,8 @@ const MemberOption = () => {
                 </button>
               </div>
             </div>
-            <div className="col-4">
-              <img src={lifevest} alt="welcome1" class="rounded-pill" />
+            <div className={"col-sm-4"}>
+              <img src={lifevest} alt="welcome1" />
             </div>
           </div>
         </div>

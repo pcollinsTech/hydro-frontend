@@ -1,49 +1,58 @@
 import React from "react";
 import welcome1 from "../../assets/images/pexels-photo-2.jpeg";
 import Service from "./Service";
+import { FaMapSigns, FaHome, FaMap } from "react-icons/fa";
+import styles from "./service.module.scss";
+
 const data = [
   {
     id: 1,
-    title: "Canoeing",
+    icon: <FaMapSigns />,
+    title: "Play",
     description: "lorem asdasdada",
     img: welcome1,
   },
   {
     id: 2,
-    title: "Climbing",
+    icon: <FaHome />,
+    title: "Stay",
     description: "lorem asdasdada",
     img: welcome1,
   },
   {
     id: 3,
-    title: "Swimming",
+    icon: <FaMap />,
+    title: "Explore",
     description: "lorem asdasdada",
     img: welcome1,
   },
   {
     id: 4,
-    title: "Hiking",
+    icon: <FaMapSigns />,
+    title: "Events",
     description: "lorem asdasdada",
     img: welcome1,
   },
   {
     id: 5,
-    title: "Hiking",
+    icon: <FaHome />,
+    title: "Groups",
     description: "lorem asdasdada",
     img: welcome1,
   },
   {
     id: 6,
-    title: "Hiking",
+    icon: <FaMap />,
+    title: "Memberships",
     description: "lorem asdasdada",
     img: welcome1,
   },
 ];
 
-const Welcome = () => {
+const Services = () => {
   return (
     <React.Fragment>
-      <section className="services-area">
+      <section className={styles.services_area}>
         <div className="container">
           <div className="section-title">
             <h2>
@@ -57,7 +66,7 @@ const Welcome = () => {
         <div className="container">
           <div className="row">
             {data.map((activity) => (
-              <Service img={activity.img} title={activity.title} />
+              <Service img={activity.img} title={activity.title} icon={activity.icon} />
             ))}
           </div>
         </div>
@@ -66,4 +75,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default Services;

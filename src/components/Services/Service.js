@@ -1,13 +1,17 @@
 import React from "react";
-
-export default function Service({ img, title }) {
+import styles from "./service.module.scss";
+export default function Service({ icon, img, title }) {
   return (
-    <div className="col-sm-4 service_card">
-      <img width="250" height="250" src={img} alt="welcome1" />
-      <span>{title}</span>
-      <button type="button" class="btn btn-primary btn-sm">
-        View
-      </button>
+    <div className="col-sm-4 mb-3">
+      <div className={styles.service_card}>
+        <img src={img} alt="welcome1" />
+        <h5>
+          <span>{icon}</span> {title}
+        </h5>
+        <button type="button" class="btn btn-primary btn-sm">
+          View
+        </button>
+      </div>
     </div>
   );
 }
