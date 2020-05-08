@@ -309,12 +309,18 @@ Banner Area CSS
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+
   h1 {
     color: white;
+    font-size: 3.4rem;
+  }
+  h5 {
+    color: rgb(161, 157, 157);
   }
   .btn-primary {
     background-color: transparent;
     border: none;
+    font-size: 0.8rem;
   }
   .btn-secondary {
     background-color: rgb(8, 40, 110);
@@ -323,6 +329,26 @@ Banner Area CSS
     width: 120px;
     font-size: 13px;
   }
+  .banner-title {
+    position: relative;
+    top: 170px;
+    left: 20px;
+  }
+  .availability {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5%;
+    color: grey;
+    position: relative;
+    top: 70px;
+    right: 120px;
+  }
+  .btn-success {
+    background-color: rgb(8, 40, 110);
+    border-color: rgb(8, 40, 110);
+    width: 140px;
+  }
 }
 
 /*================================================
@@ -330,9 +356,9 @@ Member Option Area CSS
 =================================================*/
 .member-option {
   color: white;
-  padding: 170px;
+  padding: 200px;
   background-image: url("../images/blue_oval.png");
-  height: 60vh;
+  height: 70vh;
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -358,13 +384,17 @@ Review Text Area CSS
 /*================================================
 ImageCarousel Area CSS
 =================================================*/
-ImageCarousel
 
 /*================================================
 Book Now Area CSS
 =================================================*/
 .book-now {
-  color: rgb(8, 40, 110) !important;
+  color: rgb(8, 40, 110);
+  background-image: url("../images/booknow_background.png");
+  height: 40vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   .btn-primary {
     background-color: rgb(8, 40, 110);

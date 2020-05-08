@@ -12,14 +12,12 @@ const MainNav = () => {
         <div className="row">
           <div className="col-3">
             <h6>
-              <FaRegClock />
-              Open Today: 9:00am - 6:00pm
+              <FaRegClock /> &nbsp; Open Today: 9:00am - 6:00pm
             </h6>
           </div>
           <div className="col-8 d-flex justify-content-between">
             <Link to="/">
-              <FaTicketAlt />
-              Gift Vouchers
+              <FaTicketAlt rotate={90} /> &nbsp; Gift Vouchers
             </Link>
 
             <Link to="/">Jobs</Link>
@@ -67,7 +65,7 @@ const MainNav = () => {
                 <NavItem path="/">Events</NavItem>
               </Nav>
               <button type="button" class="btn btn-primary btn-sm">
-                <FaRegCalendarAlt /> Book Now
+                <FaRegCalendarAlt /> &nbsp; Book Now
               </button>
             </Container>
           </Navbar>

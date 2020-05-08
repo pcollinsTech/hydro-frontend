@@ -1,5 +1,5 @@
 import React from "react";
-import lifevest from "../../assets/images/lifevest.jpg";
+import splash from "../../assets/images/splash_picture.png";
 
 import "./member.module.css";
 const MemberOption = () => {
@@ -23,8 +23,10 @@ const MemberOption = () => {
                 </button>
               </div>
             </div>
-            <div className={"col-3"}>
-              <img src={lifevest} alt="welcome1" />
+            <div className="row">
+              <div className="col-7">
+                <img src={splash} alt="Group waving" />
+              </div>
             </div>
           </div>
         </div>

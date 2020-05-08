@@ -16,7 +16,6 @@ const BookNow = () => {
               Book Now
             </button>
           </div>
-          <img src={BackgroundImage} alt="welcome1" />
         </div>
       </div>
     </React.Fragment>
