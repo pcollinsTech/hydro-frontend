@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { NavDropdown, Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/images/hydro-logo.jpeg";
 import NavItem from "./NavItem";
-import { FaRegCalendarAlt, FaTicketAlt, FaRegClock } from "react-icons/fa";
+import { FaRegCalendarAlt, FaTicketAlt, FaRegClock, FaUser, FaShoppingBasket } from "react-icons/fa";
 
 const MainNav = () => {
   return (
@@ -15,7 +15,7 @@ const MainNav = () => {
               <FaRegClock /> &nbsp; Open Today: 9:00am - 6:00pm
             </h6>
           </div>
-          <div className="col-8 d-flex justify-content-between">
+          <div className="col-7 d-flex justify-content-between">
             <Link to="/">
               <FaTicketAlt rotate={90} /> &nbsp; Gift Vouchers
             </Link>
@@ -28,12 +28,20 @@ const MainNav = () => {
 
             <Link to="/">Help & Rules</Link>
           </div>
+          <div className="col-1 d-flex justify-content-between">
+            <div>
+              <FaUser />
+            </div>
+            <div>
+              <FaShoppingBasket />
+            </div>
+          </div>
         </div>
       </div>
       <div className="main-nav">
         <div className="container">
           <Navbar sticky="top-fixed" id="navbar" className="navbar navbar-expand-lg ">
-            <Container className="d-flex justify-content-between">
+            <Container className="d-flex justify-content-around">
               <Navbar.Brand>
                 <Link to="/">
                   <img height="70" width="110" src={logo} alt="Hydro" href="/" />

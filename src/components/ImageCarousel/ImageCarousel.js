@@ -1,25 +1,67 @@
-import React from "react";
-import { UncontrolledCarousel } from "reactstrap";
+import React, { Component } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import photo1 from "../../assets/images/outdoor1.jpg";
+import photo2 from "../../assets/images/outdoor2.jpg";
 import photo3 from "../../assets/images/pexels-photo-3.jpeg";
+import photo4 from "../../assets/images/outdoor3.jpg";
+import photo5 from "../../assets/images/pexels-photo-2.jpg";
 
-const items = [
+const photos = [
   {
-    src: photo3,
-    altText: "Slide 1",
-    key: "1",
+    id: "1",
+    name: "Photo1",
+    src: photo1,
   },
   {
-    src: photo3,
-    altText: "Slide 2",
-    key: "2",
+    id: "2",
+    name: "Photo2",
+    src: photo2,
   },
   {
+    id: "3",
+    name: "Photo3",
     src: photo3,
-    altText: "Slide 3",
-    key: "3",
+  },
+  {
+    id: "4",
+    name: "Photo4",
+    src: photo4,
+  },
+  {
+    id: "5",
+    name: "Photo5",
+    src: photo5,
   },
 ];
 
-const Example = () => <UncontrolledCarousel items={items} />;
+class ImageCarousel extends Component {
+  render() {
+    const settings = {
+      className: "center",
+      centerMode: true,
+      infinite: true,
+      centerPadding: "60px",
+      slidesToShow: 4,
+      adaptiveHeight: false,
+      speed: 500,
+      arrows: true,
+    };
+    return (
+      <div className="carousel-slider">
+        <Slider {...settings}>
+          {photos.map((photo) => {
+            return (
+              <div>
+                <img width="95%" src={photo.src} alt="photo1" />
+              </div>
+            );
+          })}
+        </Slider>
+      </div>
+    );
+  }
+}
 
-export default Example;
+export default ImageCarousel;

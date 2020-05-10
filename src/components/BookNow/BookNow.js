@@ -1,5 +1,4 @@
 import React from "react";
-import BackgroundImage from "../../assets/images/booknow_background.png";
 
 const BookNow = () => {
   return (

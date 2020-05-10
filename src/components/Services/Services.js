@@ -1,5 +1,5 @@
 import React from "react";
-import welcome1 from "../../assets/images/pexels-photo-2.jpeg";
+import welcome1 from "../../assets/images/pexels-photo-2.jpg";
 import Service from "./Service";
 import { FaMapSigns, FaHome, FaMap } from "react-icons/fa";
 import styles from "./service.module.scss";

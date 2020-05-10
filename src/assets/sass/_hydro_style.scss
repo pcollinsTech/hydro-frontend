@@ -357,11 +357,13 @@ Member Option Area CSS
 .member-option {
   color: white;
   padding: 200px;
+
   background-image: url("../images/blue_oval.png");
   height: 70vh;
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
+
   p {
     color: white;
   }
@@ -377,13 +379,25 @@ Member Option Area CSS
 Review Text Area CSS
 =================================================*/
 .review-text {
-  color: rgb(148, 147, 147);
+  color: rgb(167, 164, 164);
   padding: 50px 0;
+  h5 {
+    font-size: 24px;
+  }
 }
 
 /*================================================
 ImageCarousel Area CSS
 =================================================*/
+.carousel-slider {
+  .slick-slider {
+    button {
+      height: 300px;
+      width: 300px;
+      z-index: 1000;
+    }
+  }
+}
 
 /*================================================
 Book Now Area CSS
@@ -391,7 +405,7 @@ Book Now Area CSS
 .book-now {
   color: rgb(8, 40, 110);
   background-image: url("../images/booknow_background.png");
-  height: 40vh;
+  height: 45vh;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
