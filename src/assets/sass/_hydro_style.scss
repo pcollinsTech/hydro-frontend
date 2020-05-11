@@ -24,7 +24,7 @@ This files table contents are outlined below>>>>>
 
 ** - Right Side Modal CSS
 ** - Go Top CSS
-
+** - @media CSS
 */
 /*================================================
 Default CSS
@@ -269,6 +269,7 @@ Navbar Area CSS
 =================================================*/
 .top-nav {
   background-color: #28b0e6;
+
   h6 {
     color: white;
   }
@@ -297,6 +298,12 @@ Navbar Area CSS
 
   .nav-item {
     padding: 0 14px;
+  }
+  .FaShoppingBasket {
+    display: none;
+  }
+  .FaBars {
+    display: none;
   }
 }
 
@@ -336,9 +343,12 @@ Banner Area CSS
   }
   .availability {
     background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
     border-radius: 5%;
+    box-shadow: -1px 2px 4px 0px rgb(196, 196, 196);
     color: grey;
     position: relative;
     top: 70px;
@@ -347,7 +357,8 @@ Banner Area CSS
   .btn-success {
     background-color: rgb(8, 40, 110);
     border-color: rgb(8, 40, 110);
-    width: 140px;
+    width: 150px;
+    height: 35px;
   }
 }
 
@@ -617,7 +628,12 @@ Right Side Modal CSS
     }
   }
 }
-
+/*================================================
+MobileMenu CSS
+=================================================*/
+.MobileMenu {
+  background-color: white;
+}
 /*================================================
 Got Top CSS
 =================================================*/
@@ -632,4 +648,49 @@ Got Top CSS
 
 .bg-cover {
   background-size: cover !important;
+}
+
+.navbar-header {
+  display: none;
+}
+/*================================================
+@media CSS
+=================================================*/
+@media (max-width: 700px) {
+  .main-nav {
+    display: block;
+    .navbar-nav {
+      display: none;
+    }
+    .FaShoppingBasket {
+      display: block;
+      color: #28b0e6;
+    }
+    .FaBars {
+      display: block;
+      color: #28b0e6;
+    }
+  }
+  .top-nav {
+    display: none;
+  }
+  .MobileMenu {
+    display: block;
+  }
+  .banner {
+    .btn-primary {
+      display: none;
+    }
+    .btn-secondary {
+      display: none;
+    }
+    .availability {
+      display: none;
+    }
+  }
+  .member-option {
+    p {
+      display: none;
+    }
+  }
 }

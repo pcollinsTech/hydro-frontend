@@ -3,37 +3,39 @@ import { Link } from "react-router-dom";
 import { NavDropdown, Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/images/hydro-logo.jpeg";
 import NavItem from "./NavItem";
-import { FaRegCalendarAlt, FaTicketAlt, FaRegClock, FaUser, FaShoppingBasket } from "react-icons/fa";
+import { FaRegCalendarAlt, FaTicketAlt, FaRegClock, FaUser, FaShoppingBasket, FaBars } from "react-icons/fa";
 
-const MainNav = () => {
+const MainNav = ({ setMenuShow }) => {
   return (
-    <div className="top-nav">
-      <div className="container">
-        <div className="row">
-          <div className="col-3">
-            <h6>
-              <FaRegClock /> &nbsp; Open Today: 9:00am - 6:00pm
-            </h6>
-          </div>
-          <div className="col-7 d-flex justify-content-between">
-            <Link to="/">
-              <FaTicketAlt rotate={90} /> &nbsp; Gift Vouchers
-            </Link>
-
-            <Link to="/">Jobs</Link>
-
-            <Link to="/">Memberships</Link>
-
-            <Link to="/">Contact</Link>
-
-            <Link to="/">Help & Rules</Link>
-          </div>
-          <div className="col-1 d-flex justify-content-between">
-            <div>
-              <FaUser />
+    <div>
+      <div className="top-nav">
+        <div className="container">
+          <div className="row">
+            <div className="col-3">
+              <h6>
+                <FaRegClock /> &nbsp; Open Today: 9:00am - 6:00pm
+              </h6>
             </div>
-            <div>
-              <FaShoppingBasket />
+            <div className="col-7 d-flex justify-content-between">
+              <Link to="/">
+                <FaTicketAlt rotate={90} /> &nbsp; Gift Vouchers
+              </Link>
+
+              <Link to="/">Jobs</Link>
+
+              <Link to="/">Memberships</Link>
+
+              <Link to="/">Contact</Link>
+
+              <Link to="/">Help & Rules</Link>
+            </div>
+            <div className="col-1 d-flex justify-content-between">
+              <div>
+                <FaUser />
+              </div>
+              <div>
+                <FaShoppingBasket />
+              </div>
             </div>
           </div>
         </div>
@@ -72,9 +74,15 @@ const MainNav = () => {
                 </NavDropdown>
                 <NavItem path="/">Events</NavItem>
               </Nav>
+              <div className="FaShoppingBasket">
+                <FaShoppingBasket />
+              </div>
               <button type="button" class="btn btn-primary btn-sm">
                 <FaRegCalendarAlt /> &nbsp; Book Now
               </button>
+              <div className="FaBars">
+                <FaBars />
+              </div>
             </Container>
           </Navbar>
         </div>

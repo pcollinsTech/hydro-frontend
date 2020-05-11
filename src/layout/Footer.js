@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import moment from "moment";
-
+import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
 import LogoBlue from "../assets/images/hydro-logo-blue.png";
 
 const Footer = () => {
@@ -18,7 +18,9 @@ const Footer = () => {
               <h4>
                 <b>JOIN THE FUN</b>
               </h4>
-              <p>Icon / Icon / Icon</p>
+              <p>
+                <FaFacebookSquare size={25} /> <FaInstagram size={25} /> <FaYoutube size={25} />
+              </p>
             </div>
 
             {/* 
@@ -33,13 +35,7 @@ const Footer = () => {
               </h4>
 
               <div className="col">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  defaultValue=""
-                  placeholder="hello@letsgohydro.com"
-                />
+                <input type="email" name="email" id="email" defaultValue="" placeholder="hello@letsgohydro.com" />
                 <button type="button" class="btn btn-primary btn-sm">
                   Send
                 </button>
@@ -202,9 +198,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="ml p-2">
-              <p>{`Copyright @ ${moment().format(
-                "YYYY"
-              )} Let's Go Hydro All rights reserved`}</p>
+              <p>{`Copyright @ ${moment().format("YYYY")} Let's Go Hydro All rights reserved`}</p>
             </div>
 
             <div className="ml-auto p-2">

@@ -24,7 +24,7 @@ const MemberOption = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-7">
+              <div className="col-mb-7">
                 <img src={splash} alt="Group waving" />
               </div>
             </div>

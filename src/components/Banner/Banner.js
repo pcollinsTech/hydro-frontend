@@ -75,7 +75,7 @@ const Banner = () => {
                     </div>
                     <br />
                     <button type="button" class="btn btn-success btn-sm">
-                      Book Now
+                      Check Availability
                     </button>
                   </div>
                 </div>
