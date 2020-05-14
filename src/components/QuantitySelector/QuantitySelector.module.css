@@ -1,0 +1,26 @@
+.quantity_selection_form {
+  border: 1px black solid;
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 10px;
+}
+
+.quantity_selector_box {
+  border-radius: 5px;
+  border: 1px solid;
+  height: 30px;
+}
+
+.quantity_selection_list {
+  list-style: none;
+}
+
+.counter {
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: 1px solid green;
+}
+
+.quantity {
+  padding: 5px 10px;
+}

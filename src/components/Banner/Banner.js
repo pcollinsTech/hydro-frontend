@@ -3,6 +3,7 @@ import { FaMapSigns, FaRegCalendarAlt } from "react-icons/fa";
 import DatePicker from "react-datepicker";
 import { FiUsers, FiPlayCircle } from "react-icons/fi";
 import "react-datepicker/dist/react-datepicker.css";
+import QuantitySelector from "../QuantitySelector/QuantitySelector";
 
 const Banner = () => {
   const [startDate, setStartDate] = React.useState(new Date());
@@ -37,9 +38,20 @@ const Banner = () => {
 
                     <div className="play-stay">
                       <label for="play">Play </label> &nbsp;
-                      <input type="radio" id="vehicle1" name="vehicle1" value="Bike" /> &nbsp; &nbsp;
+                      <input
+                        type="radio"
+                        id="vehicle1"
+                        name="vehicle1"
+                        value="Bike"
+                      />{" "}
+                      &nbsp; &nbsp;
                       <label for="stay">Stay </label>&nbsp;
-                      <input type="radio" id="vehicle1" name="vehicle1" value="Bike" />
+                      <input
+                        type="radio"
+                        id="vehicle1"
+                        name="vehicle1"
+                        value="Bike"
+                      />
                     </div>
                     <div className="input-fields">
                       <div className="items">
@@ -69,7 +81,12 @@ const Banner = () => {
                         </label>
                         <br />
                         <FaRegCalendarAlt />
-                        <DatePicker className="datePicker" showPopperArrow={false} selected={startDate} onChange={(date) => setStartDate(date)} />
+                        <DatePicker
+                          className="datePicker"
+                          showPopperArrow={false}
+                          selected={startDate}
+                          onChange={(date) => setStartDate(date)}
+                        />
                       </div>
                     </div>
                     <div className="items">
@@ -79,12 +96,13 @@ const Banner = () => {
                       <br />
                       <div class="controls">
                         <FiUsers />
-                        <select class="floatLabel">
+                        {/* <select class="floatLabel">
                           <option value="0">1 Adult - 1 Junior</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
-                        </select>
+                        </select> */}
+                        <QuantitySelector />
                       </div>
                     </div>
                     <br />
