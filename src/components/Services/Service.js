@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./service.module.scss";
 export default function Service({ icon, img, title }) {
   return (
-    <div className="col-sm-4 mb-3">
-      <div className="services">
+    <div className="col-sm-4 mb-5">
+      <div className="services d-flex justify-content-around">
         <div className={styles.service_card}>
           <img src={img} alt="welcome1" />
           <h5>

@@ -268,42 +268,170 @@ button:focus {
 Navbar Area CSS
 =================================================*/
 .top-nav {
-  background-color: #28b0e6;
+  background-color: rgb(0, 174, 239);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 13px;
+  padding-left: 35px;
 
+  .opening {
+    margin-top: 5px;
+  }
+
+  .top-user-icon {
+    color: white;
+  }
+  .top-basket-icon {
+    color: white;
+  }
   h6 {
     color: white;
+    font-size: 13px;
   }
   ul {
     list-style-type: none;
   }
   a {
     color: white;
+    margin-top: 3px;
   }
 }
 
 .main-nav {
   background-color: rgb(248, 245, 245);
+
   .navbar-nav .nav-item .nav-link {
-    color: rgb(148, 147, 147) !important;
+    color: rgb(172, 168, 168) !important;
     text-transform: none;
+    margin-left: 15px;
   }
   .btn-primary {
-    background-color: #28b0e6;
-    border-color: #28b0e6;
+    background-color: rgb(0, 174, 239);
+    border-color: rgb(0, 174, 239);
     height: 30px;
-    width: 150px;
-    font-size: 14px;
-    margin-right: 20px;
+    width: 120px;
+    font-size: 13px;
+    margin-right: 0px;
+    margin-left: 20px;
+    margin-top: 7px;
+    padding-top: 2px;
+  }
+  .btn-primary:hover {
+    background-color: green;
+    border-color: green;
   }
 
   .nav-item {
     padding: 0 14px;
   }
-  .FaShoppingBasket {
-    display: none;
-  }
+
   .FaBars {
     display: none;
+  }
+  .MobileMenu {
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgb(37, 152, 219);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+
+    .mobile-top-nav {
+      width: 100%;
+      svg {
+        color: white;
+      }
+    }
+    .mobile-inner {
+      margin: 0 auto;
+      position: fixed;
+      top: 20%;
+      left: 35%;
+      ul {
+        list-style-type: none;
+        text-align: center;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .nav-play {
+    width: 50em;
+    background-color: rgb(0, 40, 79);
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 5px 5px 5px 5px;
+
+    h4 {
+      color: white;
+    }
+    h3 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+    a {
+      color: white;
+    }
+  }
+  .nav-stay {
+    width: 50em;
+    background-color: rgb(0, 40, 79);
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 5px 5px 5px 5px;
+
+    h4 {
+      color: white;
+    }
+    h3 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+    a {
+      color: white;
+    }
+  }
+  .nav-explore {
+    background-color: rgb(0, 40, 79);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 35px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-top: 10px;
+    border-radius: 3%;
+    a {
+      color: white;
+    }
+  }
+  .nav-groups {
+    background-color: rgb(0, 40, 79);
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3%;
+    a {
+      color: white;
+    }
   }
 }
 
@@ -319,7 +447,7 @@ Banner Area CSS
 
   h1 {
     color: white;
-    font-size: 3.4rem;
+    font-size: 3.5rem;
   }
   h5 {
     color: rgb(161, 157, 157);
@@ -329,12 +457,19 @@ Banner Area CSS
     border: none;
     font-size: 0.8rem;
   }
+  .btn-primary:hover {
+    background-color: transparent;
+  }
   .btn-secondary {
     background-color: rgb(8, 40, 110);
     border-color: rgb(8, 40, 110);
-    height: 30px;
-    width: 120px;
+    height: 42px;
+    width: 140px;
     font-size: 13px;
+  }
+  .btn-secondary:hover {
+    background-color: green;
+    border-color: green;
   }
   .banner-title {
     position: relative;
@@ -343,22 +478,69 @@ Banner Area CSS
   }
   .availability {
     background-color: white;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 5%;
-    box-shadow: -1px 2px 4px 0px rgb(196, 196, 196);
+    box-shadow: -1px 2px 4px 0px rgb(163, 162, 162);
     color: grey;
     position: relative;
-    top: 70px;
-    right: 120px;
+    top: 65px;
+    right: 110px;
+    font-size: 18px;
   }
+
   .btn-success {
     background-color: rgb(8, 40, 110);
     border-color: rgb(8, 40, 110);
-    width: 150px;
-    height: 35px;
+    width: 202px;
+    height: 42px;
+    padding-bottom: 7px;
+  }
+  .controls {
+    font-size: 16px;
+    border-radius: 50%;
+  }
+  .floatLabel {
+    border-radius: 5px 5px 5px 5px;
+  }
+  .date-picker {
+    font-size: 16px;
+  }
+  .floatLabel {
+    border-radius: 5px 5px 5px 5px;
+    width: 195px;
+  }
+  .datePicker {
+    border-radius: 5px 5px 5px 5px;
+    width: 195px;
+  }
+  input[type="radio"]:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(216, 216, 216);
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+  input[type="radio"]:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(0, 174, 239);
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
   }
 }
 
@@ -385,6 +567,13 @@ Member Option Area CSS
     width: 150px;
     font-size: 13px;
   }
+  .btn-primary:hover {
+    background-color: green;
+    border-color: green;
+  }
+  .member-image {
+    padding-left: 0px;
+  }
 }
 /*================================================
 Review Text Area CSS
@@ -404,7 +593,7 @@ ImageCarousel Area CSS
   .slick-slider {
     button {
       height: 300px;
-      width: 300px;
+      width: 400px;
       z-index: 1000;
     }
   }
@@ -434,11 +623,11 @@ Footer Area CSS
 =================================================*/
 .footer-area {
   padding: 40px 0;
-  background: #28b0e6;
+  background: rgb(0, 174, 239);
   p {
     font-size: 14px;
     margin-bottom: 0;
-    color: #d5d5d5;
+    color: white;
   }
   h4 {
     color: white;
@@ -446,7 +635,7 @@ Footer Area CSS
   }
   h6 {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
   }
   ul {
     list-style-type: none;
@@ -454,6 +643,7 @@ Footer Area CSS
     margin: 0;
   }
   li {
+    font-size: 14px;
     &::before {
       content: "";
     }
@@ -468,16 +658,28 @@ Footer Area CSS
     }
   }
   .btn-primary {
-    background-color: rgb(8, 40, 110);
-    border-color: rgb(8, 40, 110);
-    height: 30px;
+    background-color: rgb(36, 64, 114);
+    border-color: rgb(36, 64, 114);
+    height: 28px;
     width: 80px;
+    font-size: 13px;
+    padding-bottom: 20px;
   }
   .btn-secondary {
-    background-color: rgb(8, 40, 110);
-    border-color: rgb(8, 40, 110);
+    background-color: rgb(36, 64, 114);
+    border-color: rgb(36, 64, 114);
     height: 35px;
     width: 120px;
+    font-size: 13px;
+    margin-inline-start: auto;
+  }
+  .btn-primary:hover {
+    background-color: green;
+    border-color: green;
+  }
+  .btn-secondary:hover {
+    background-color: green;
+    border-color: green;
   }
   input {
     background: transparent;
@@ -508,9 +710,10 @@ Footer Area CSS
   }
 }
 .copyright {
-  background-color: rgb(37, 152, 219);
+  background-color: rgb(4, 156, 213);
   color: white;
-  padding-top: 10px;
+  padding-top: 20px;
+  font-size: 13px;
 
   p {
     color: white;
@@ -669,6 +872,14 @@ Got Top CSS
     .FaBars {
       display: block;
       color: #28b0e6;
+    }
+    .btn-primary {
+      display: none;
+    }
+    .btn-secondary {
+      background-color: rgb(0, 174, 239);
+      border-color: rgb(0, 174, 239);
+      width: 85px;
     }
   }
   .top-nav {

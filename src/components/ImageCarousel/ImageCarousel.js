@@ -6,7 +6,6 @@ import photo1 from "../../assets/images/outdoor1.jpg";
 import photo2 from "../../assets/images/outdoor2.jpg";
 import photo3 from "../../assets/images/pexels-photo-3.jpeg";
 import photo4 from "../../assets/images/outdoor3.jpg";
-import photo5 from "../../assets/images/pexels-photo-2.jpg";
 
 const photos = [
   {
@@ -32,7 +31,7 @@ const photos = [
   {
     id: "5",
     name: "Photo5",
-    src: photo5,
+    src: photo2,
   },
 ];
 
@@ -43,7 +42,7 @@ class ImageCarousel extends Component {
       centerMode: true,
       infinite: true,
       centerPadding: "60px",
-      slidesToShow: 4,
+      slidesToShow: 3,
       adaptiveHeight: false,
       speed: 500,
       arrows: true,

@@ -1,14 +1,13 @@
 import React from "react";
 import splash from "../../assets/images/splash_picture.png";
 
-import "./member.module.css";
 const MemberOption = () => {
   return (
     <React.Fragment>
       <div className="member-option">
         <div className="container">
           <div className="row">
-            <div className="col-sm-5">
+            <div className="col-4">
               <div className="section-title text-left">
                 <h2>
                   <b>GET YOUR HYDRO PASS TODAY</b>
@@ -23,8 +22,9 @@ const MemberOption = () => {
                 </button>
               </div>
             </div>
-            <div className="row">
-              <div className="col-mb-7">
+
+            <div className="col">
+              <div className="member-image">
                 <img src={splash} alt="Group waving" />
               </div>
             </div>

@@ -1,50 +1,51 @@
 import React from "react";
 import welcome1 from "../../assets/images/pexels-photo-2.jpg";
 import Service from "./Service";
-import { FaMapSigns, FaHome, FaMap } from "react-icons/fa";
+import { FaMapSigns, FaHome } from "react-icons/fa";
+import { FiMap } from "react-icons/fi";
 import styles from "./service.module.scss";
 
 const data = [
   {
     id: 1,
-    icon: <FaMapSigns />,
+    icon: <FaMapSigns size={35} />,
     title: "Play",
-    description: "lorem asdasdada",
+    description: "play",
     img: welcome1,
   },
   {
     id: 2,
-    icon: <FaHome />,
+    icon: <FaHome size={35} />,
     title: "Stay",
-    description: "lorem asdasdada",
+    description: "stay",
     img: welcome1,
   },
   {
     id: 3,
-    icon: <FaMap />,
+    icon: <FiMap size={35} />,
     title: "Explore",
-    description: "lorem asdasdada",
+    description: "explore",
     img: welcome1,
   },
   {
     id: 4,
-    icon: <FaMapSigns />,
+    icon: <FaMapSigns size={35} />,
     title: "Events",
-    description: "lorem asdasdada",
+    description: "events",
     img: welcome1,
   },
   {
     id: 5,
-    icon: <FaHome />,
+    icon: <FaHome size={35} />,
     title: "Groups",
-    description: "lorem asdasdada",
+    description: "groups",
     img: welcome1,
   },
   {
     id: 6,
-    icon: <FaMap />,
+    icon: <FiMap size={35} />,
     title: "Memberships",
-    description: "lorem asdasdada",
+    description: "membership",
     img: welcome1,
   },
 ];

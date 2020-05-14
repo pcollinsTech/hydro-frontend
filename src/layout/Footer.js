@@ -23,10 +23,10 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* 
-            
+            {/*
+
                *** Use the Subscribe Component here***
-          
+
           */}
 
             <div className="col-sm-4">
@@ -71,6 +71,7 @@ const Footer = () => {
                     <br />
                     BT8 8BP
                   </h6>
+                  <br />
                   <button type="button" class="btn btn-secondary btn-sm">
                     Get Directions
                   </button>
@@ -197,11 +198,11 @@ const Footer = () => {
       <div className="copyright">
         <div className="container">
           <div className="row">
-            <div className="ml p-2">
+            <div className="ml p-1">
               <p>{`Copyright @ ${moment().format("YYYY")} Let's Go Hydro All rights reserved`}</p>
             </div>
 
-            <div className="ml-auto p-2">
+            <div className="ml-auto p-1">
               <p>Created By Big House Creative Web Design Belfast</p>
             </div>
           </div>

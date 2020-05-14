@@ -1,7 +1,11 @@
 import React from "react";
-import { FaPlayCircle } from "react-icons/fa";
+import { FaMapSigns, FaRegCalendarAlt } from "react-icons/fa";
+import DatePicker from "react-datepicker";
+import { FiUsers, FiPlayCircle } from "react-icons/fi";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Banner = () => {
+  const [startDate, setStartDate] = React.useState(new Date());
   return (
     <React.Fragment>
       <div className="banner">
@@ -18,7 +22,7 @@ const Banner = () => {
                 <br />
                 <br />
                 <button type="button" class="btn btn-primary btn-sm">
-                  <FaPlayCircle size={45} /> &nbsp; Play Video
+                  <FiPlayCircle size={55} /> &nbsp; Play Video
                 </button>
                 <button type="button" class="btn btn-secondary btn-sm">
                   Short Breaks
@@ -30,7 +34,8 @@ const Banner = () => {
                     <div className="title">
                       <h5>Select Play or Stay</h5>
                     </div>
-                    <div className="items">
+
+                    <div className="play-stay">
                       <label for="play">Play </label> &nbsp;
                       <input type="radio" id="vehicle1" name="vehicle1" value="Bike" /> &nbsp; &nbsp;
                       <label for="stay">Stay </label>&nbsp;
@@ -43,20 +48,28 @@ const Banner = () => {
                         </label>
                         <br />
                         <div class="controls">
+                          <FaMapSigns />
                           <select class="floatLabel">
-                            <option value="0">Aqua Park:</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            <option value="0">Aqua Park</option>
+                            <option value="1">Hydro Climb</option>
+                            <option value="2">Waterboard & Kneeboard</option>
+                            <option value="3">Tubing</option>
+                            <option value="4">Puddle Park</option>
+                            <option value="5">Aqua Rugby</option>
+                            <option value="6">Open Water Swim</option>
+                            <option value="7">BBQ Pods</option>
+                            <option value="8">Stand up Paddle Boarding</option>
+                            <option value="9">Kayaking</option>
                           </select>
                         </div>
                       </div>
-                      <div className="items">
+                      <div className="date-picker">
                         <label for="dates" className="label">
                           Dates
                         </label>
                         <br />
-                        <input id="dates" type="date" className="date" />
+                        <FaRegCalendarAlt />
+                        <DatePicker className="datePicker" showPopperArrow={false} selected={startDate} onChange={(date) => setStartDate(date)} />
                       </div>
                     </div>
                     <div className="items">
@@ -65,6 +78,7 @@ const Banner = () => {
                       </label>
                       <br />
                       <div class="controls">
+                        <FiUsers />
                         <select class="floatLabel">
                           <option value="0">1 Adult - 1 Junior</option>
                           <option value="1">1</option>
