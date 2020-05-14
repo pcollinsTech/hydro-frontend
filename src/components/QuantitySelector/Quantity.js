@@ -8,7 +8,6 @@ export default function Quantity() {
     if (change === "plus") {
       return setQuantity(quantity + 1);
     } else if (change === "minus") {
-      console.log("CLICKEWD");
       if (quantity === 0) {
         return quantity;
       } else {
