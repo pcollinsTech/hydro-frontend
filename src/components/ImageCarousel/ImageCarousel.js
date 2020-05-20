@@ -31,7 +31,7 @@ const photos = [
   {
     id: "5",
     name: "Photo5",
-    src: photo2,
+    src: photo3,
   },
 ];
 

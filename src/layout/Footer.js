@@ -11,10 +11,10 @@ const Footer = () => {
       <footer className="footer-area">
         <div className="container">
           <div className="row">
-            <div className="col-sm-4">
+            <div className="col-sm-4 footer-logo">
               <img className="center" src={LogoBlue} alt="welcome1" />
             </div>
-            <div className="col-sm-4">
+            <div className="col-sm-4 footer-socialmedia">
               <h4>
                 <b>JOIN THE FUN</b>
               </h4>
@@ -29,7 +29,7 @@ const Footer = () => {
 
           */}
 
-            <div className="col-sm-4">
+            <div className="col-sm-4 footer-newsletter">
               <h4>
                 <b>SIGN-UP FOR NEWSLETTER</b>
               </h4>
@@ -121,7 +121,7 @@ const Footer = () => {
                       <Link to="/">Safari Lodges</Link>
                     </li>
                     <li>
-                      <Link to="/">lake Pod</Link>
+                      <Link to="/">Lake Pod</Link>
                     </li>
                     <li>
                       <Link to="/">Houseboat</Link>
@@ -202,7 +202,7 @@ const Footer = () => {
               <p>{`Copyright @ ${moment().format("YYYY")} Let's Go Hydro All rights reserved`}</p>
             </div>
 
-            <div className="ml-auto p-1">
+            <div className="ml-auto p-1 created">
               <p>Created By Big House Creative Web Design Belfast</p>
             </div>
           </div>

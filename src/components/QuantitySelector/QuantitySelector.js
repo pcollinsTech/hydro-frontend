@@ -5,10 +5,9 @@ export default function QuantitySelector() {
   const [toggle, setToggle] = useState(false);
   return (
     <div>
-      <div
-        className={styles.quantity_selector_box}
-        onClick={() => setToggle(!toggle)}
-      ></div>
+      <div className={styles.quantity_selector_box} onClick={() => setToggle(!toggle)}>
+        <label>1 Adult - 1 Junior</label>
+      </div>
       {toggle && (
         <div className={styles.quantity_selection_form}>
           <div className="d-flex justify-content-between mb-2">

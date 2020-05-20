@@ -1,33 +1,46 @@
 import React from "react";
 import { FaMapSigns, FaRegCalendarAlt } from "react-icons/fa";
 import DatePicker from "react-datepicker";
-import { FiUsers, FiPlayCircle } from "react-icons/fi";
+import { FiPlayCircle, FiUsers } from "react-icons/fi";
 import "react-datepicker/dist/react-datepicker.css";
 import QuantitySelector from "../QuantitySelector/QuantitySelector";
+import banner from "../../assets/images/banners/home.png";
+import splash from "../../assets/images/splash-graphic-1.png";
+import splash1 from "../../assets/images/header-splash.png";
+import playIcon from "../../assets/images/play-video-icon.svg";
 
-const Banner = () => {
+const Banner = ({ bannerImage, title, subTitle }) => {
   const [startDate, setStartDate] = React.useState(new Date());
+  console.log(banner);
   return (
     <React.Fragment>
-      <div className="banner">
+      <div className="banner" style={{ backgroundImage: `url(${bannerImage})` }}>
+        <div className="splash-header">
+          {" "}
+          <img src={splash1} alt="splash" />{" "}
+        </div>
+        <div className="splash-banner">
+          {" "}
+          <img src={splash} alt="splash" />{" "}
+        </div>
         <div className="banner-title">
           <div className="container">
             <div className="row">
               <div className="col-7">
-                <h1>
-                  <b>
-                    LET THE <br />
-                    FUN BEGIN...
-                  </b>
-                </h1>
+                <h1 dangerouslySetInnerHTML={{ __html: title }} />
+
+                <h4 dangerouslySetInnerHTML={{ __html: subTitle }} />
                 <br />
                 <br />
-                <button type="button" class="btn btn-primary btn-sm">
-                  <FiPlayCircle size={55} /> &nbsp; Play Video
-                </button>
-                <button type="button" class="btn btn-secondary btn-sm">
-                  Short Breaks
-                </button>
+                <br />
+                <div className="row">
+                  <button type="button" class="btn btn-primary btn-sm">
+                    <img src={playIcon} alt="playicon" /> &nbsp; Play Video
+                  </button>
+                  <button type="button" class="btn btn-secondary btn-sm">
+                    Short Breaks
+                  </button>
+                </div>
               </div>
               <div className="availability">
                 <div className="container">
@@ -38,20 +51,9 @@ const Banner = () => {
 
                     <div className="play-stay">
                       <label for="play">Play </label> &nbsp;
-                      <input
-                        type="radio"
-                        id="vehicle1"
-                        name="vehicle1"
-                        value="Bike"
-                      />{" "}
-                      &nbsp; &nbsp;
+                      <input type="radio" id="vehicle1" name="vehicle1" value="Bike" /> &nbsp; &nbsp; &nbsp;
                       <label for="stay">Stay </label>&nbsp;
-                      <input
-                        type="radio"
-                        id="vehicle1"
-                        name="vehicle1"
-                        value="Bike"
-                      />
+                      <input type="radio" id="vehicle1" name="vehicle1" value="Bike" />
                     </div>
                     <div className="input-fields">
                       <div className="items">
@@ -60,7 +62,7 @@ const Banner = () => {
                         </label>
                         <br />
                         <div class="controls">
-                          <FaMapSigns />
+                          <FaMapSigns /> &nbsp;
                           <select class="floatLabel">
                             <option value="0">Aqua Park</option>
                             <option value="1">Hydro Climb</option>
@@ -80,13 +82,10 @@ const Banner = () => {
                           Dates
                         </label>
                         <br />
-                        <FaRegCalendarAlt />
-                        <DatePicker
-                          className="datePicker"
-                          showPopperArrow={false}
-                          selected={startDate}
-                          onChange={(date) => setStartDate(date)}
-                        />
+                        <div className="date-border">
+                          <FaRegCalendarAlt /> &nbsp;
+                          <DatePicker className="datePicker" showPopperArrow={false} selected={startDate} onChange={(date) => setStartDate(date)} />
+                        </div>
                       </div>
                     </div>
                     <div className="items">
@@ -94,14 +93,8 @@ const Banner = () => {
                         People
                       </label>
                       <br />
-                      <div class="controls">
-                        <FiUsers />
-                        {/* <select class="floatLabel">
-                          <option value="0">1 Adult - 1 Junior</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                        </select> */}
+                      <div class="controls d-flex">
+                        <FiUsers /> &nbsp;
                         <QuantitySelector />
                       </div>
                     </div>

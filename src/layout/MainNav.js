@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { NavDropdown, Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../assets/images/hydro-logo.jpeg";
 import NavItem from "./NavItem";
-import { FaRegCalendarAlt, FaRegClock, FaShoppingBasket, FaBars, FaWindowClose, FaMapSigns, FaHome } from "react-icons/fa";
-import { FiUser, FiShoppingCart } from "react-icons/fi";
+import { FaRegCalendarAlt, FaRegClock, FaBars, FaWindowClose, FaMapSigns, FaHome } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
 import { GiTicket } from "react-icons/gi";
 import MobileMenu from "./MobileMenu";
+import userIcon from "../assets/images/user-icon.svg";
+import calenderIcon from "../assets/images/calendar-icon.svg";
+
 const MainNav = ({ setMenuShow }) => {
   return (
     <div>
@@ -33,10 +36,14 @@ const MainNav = ({ setMenuShow }) => {
             </div>
             <div className="col-1 d-flex justify-content-between">
               <div className="top-user-icon">
-                <FiUser size={18} />
+                <Link to="/">
+                  <img src={userIcon} alt="usericon" />
+                </Link>
               </div>
               <div className="top-basket-icon">
-                <FiShoppingCart size={17} />
+                <Link to="/">
+                  <FiShoppingCart size={22} />
+                </Link>
               </div>
             </div>
           </div>
@@ -217,7 +224,7 @@ const MainNav = ({ setMenuShow }) => {
                     <div>
                       <div>
                         {" "}
-                        <FaShoppingBasket size={20} /> &nbsp;
+                        <FiShoppingCart size={20} /> &nbsp;
                         <button type="button" class="btn btn-secondary btn-sm">
                           Book Now
                         </button>{" "}
@@ -232,7 +239,7 @@ const MainNav = ({ setMenuShow }) => {
                             <div className="mobile-top-nav  ">
                               <div className="row d-flex justify-content-between py-5">
                                 <div>
-                                  <FaShoppingBasket size={50} />
+                                  <FiShoppingCart size={50} />
                                 </div>
                                 <div className="mr-5" onClick={toggle}>
                                   <FaWindowClose size={50} />

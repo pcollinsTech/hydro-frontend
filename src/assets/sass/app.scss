@@ -17,3 +17,59 @@
 @import "hydro_responsive";
 
 @import "hydro_style";
+
+// .navbar .dropdownFull .dropdown-menu div[class*="col"] {
+//   margin-bottom: 1rem;
+// }
+
+// .navbar .dropdownFull .dropdown-menu {
+//   border: none;
+//   background-color: #0060c8 !important;
+// }
+
+// /* breakpoint and up - mega dropdownFull styles */
+// @media screen and (min-width: 992px) {
+//   /* remove the padding from the navbar so the dropdownFull hover state is not broken */
+//   .navbar {
+//     padding-top: 0px;
+//     padding-bottom: 0px;
+//   }
+
+//   /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+//   .navbar .nav-item {
+//     padding: 0.5rem 0.5rem;
+//     margin: 0 0.25rem;
+//   }
+
+//   /* makes the dropdownFull full width  */
+//   .navbar .dropdownFull {
+//     position: static;
+//   }
+
+//   .navbar .dropdownFull .dropdown-menu {
+//     width: 100%;
+//     left: 0;
+//     right: 0;
+//     /*  height of nav-item  */
+//     top: 45px;
+
+//     display: block;
+//     visibility: hidden;
+//     opacity: 0;
+//     transition: visibility 0s, opacity 0.3s linear;
+//   }
+
+//   /* shows the dropdownFull menu on hover */
+//   .navbar .dropdownFull:hover .dropdownFull .dropdown-menu,
+//   .navbar .dropdownFull .dropdownFull .dropdown-menu:hover {
+//     display: block;
+//     visibility: visible;
+//     opacity: 1;
+//     transition: visibility 0s, opacity 0.3s linear;
+//   }
+
+//   .navbar .dropdownFull .dropdown-menu {
+//     border: 1px solid rgba(0, 0, 0, 0.15);
+//     background-color: #fff;
+//   }
+// }

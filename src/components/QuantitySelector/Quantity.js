@@ -17,14 +17,14 @@ export default function Quantity() {
   };
   return (
     <div className="d-flex justify-content-around">
-      <div className={styles.counter} onClick={() => changeQuantity("plus")}>
-        <FaPlus />
+      <div className={styles.counter} onClick={() => changeQuantity("minus")}>
+        <FaMinus />
       </div>
       <div className={styles.quantity}>
         <p>{quantity}</p>
       </div>
-      <div className={styles.counter} onClick={() => changeQuantity("minus")}>
-        <FaMinus />
+      <div className={styles.counter} onClick={() => changeQuantity("plus")}>
+        <FaPlus />
       </div>
     </div>
   );

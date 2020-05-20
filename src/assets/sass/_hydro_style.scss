@@ -299,12 +299,13 @@ Navbar Area CSS
 
 .main-nav {
   background-color: rgb(248, 245, 245);
-
+  z-index: 1000;
   .navbar-nav .nav-item .nav-link {
     color: rgb(172, 168, 168) !important;
     text-transform: none;
     margin-left: 15px;
   }
+
   .btn-primary {
     background-color: rgb(0, 174, 239);
     border-color: rgb(0, 174, 239);
@@ -313,16 +314,17 @@ Navbar Area CSS
     font-size: 13px;
     margin-right: 0px;
     margin-left: 20px;
-    margin-top: 7px;
+    margin-top: 8px;
     padding-top: 2px;
   }
   .btn-primary:hover {
-    background-color: green;
-    border-color: green;
+    background-color: rgb(0, 40, 79);
+    border-color: rgb(0, 40, 79);
   }
 
   .nav-item {
-    padding: 0 14px;
+    padding: 0 12px;
+    font-weight: 500;
   }
 
   .FaBars {
@@ -330,7 +332,7 @@ Navbar Area CSS
   }
   .MobileMenu {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     z-index: 100;
     background-color: rgb(37, 152, 219);
     color: white;
@@ -360,7 +362,7 @@ Navbar Area CSS
     }
   }
   .nav-play {
-    width: 50em;
+    width: 50vw;
     background-color: rgb(0, 40, 79);
     margin-top: -10px;
     margin-bottom: -10px;
@@ -369,6 +371,7 @@ Navbar Area CSS
     padding-left: 60px;
     padding-right: 60px;
     border-radius: 5px 5px 5px 5px;
+    position: absolute;
 
     h4 {
       color: white;
@@ -439,23 +442,44 @@ Navbar Area CSS
 Banner Area CSS
 =================================================*/
 .banner {
-  background-image: url("../images/banners/home.png");
   height: 80vh;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-
+  z-index: 0;
+  .splash-banner {
+    position: absolute;
+    right: 530px;
+    bottom: 30px;
+    width: 10vw;
+    z-index: 0;
+  }
+  .splash-header {
+    position: absolute;
+    width: 30vw;
+    right: 170px;
+    top: 120px;
+    bottom: 0px;
+    z-index: 1;
+  }
   h1 {
     color: white;
     font-size: 3.5rem;
+    font-weight: bolder;
+  }
+  h4 {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
   }
   h5 {
     color: rgb(161, 157, 157);
   }
+
   .btn-primary {
     background-color: transparent;
     border: none;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
   .btn-primary:hover {
     background-color: transparent;
@@ -466,10 +490,12 @@ Banner Area CSS
     height: 42px;
     width: 140px;
     font-size: 13px;
+    margin-top: 7px;
+    margin-left: 30px;
   }
   .btn-secondary:hover {
-    background-color: green;
-    border-color: green;
+    background-color: rgb(0, 174, 239);
+    border-color: rgb(0, 174, 239);
   }
   .banner-title {
     position: relative;
@@ -480,8 +506,8 @@ Banner Area CSS
     background-color: white;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
     border-radius: 5%;
     box-shadow: -1px 2px 4px 0px rgb(163, 162, 162);
     color: grey;
@@ -494,27 +520,50 @@ Banner Area CSS
   .btn-success {
     background-color: rgb(8, 40, 110);
     border-color: rgb(8, 40, 110);
-    width: 202px;
+    width: 205px;
     height: 42px;
     padding-bottom: 7px;
   }
+  .btn-success:hover {
+    background-color: rgb(0, 174, 239);
+    border-color: rgb(0, 174, 239);
+  }
   .controls {
     font-size: 16px;
-    border-radius: 50%;
+    border-radius: 5px;
+    color: rgb(173, 169, 169);
+    border: solid;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
   }
   .floatLabel {
     border-radius: 5px 5px 5px 5px;
+    color: rgb(173, 169, 169);
   }
   .date-picker {
     font-size: 16px;
+    color: rgb(136, 136, 136);
   }
+
   .floatLabel {
     border-radius: 5px 5px 5px 5px;
-    width: 195px;
+    width: 205px;
+    color: rgb(173, 169, 169);
+    border: none;
+  }
+  .date-border {
+    border-radius: 5px;
+    color: rgb(173, 169, 169);
+    border: solid;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
   }
   .datePicker {
-    border-radius: 5px 5px 5px 5px;
-    width: 195px;
+    border: none;
+    width: 205px;
+    color: rgb(173, 169, 169);
   }
   input[type="radio"]:after {
     width: 20px;
@@ -545,14 +594,36 @@ Banner Area CSS
 }
 
 /*================================================
+Service Area CSS
+=================================================*/
+.stay-button {
+  .divider {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+  }
+  .btn-primary {
+    font-size: 13px;
+  }
+}
+
+.splash-service {
+  position: absolute;
+  z-index: -1;
+  top: 930px;
+  left: 270px;
+  width: 10vw;
+}
+
+/*================================================
 Member Option Area CSS
 =================================================*/
 .member-option {
   color: white;
-  padding: 200px;
+  padding: 240px;
 
   background-image: url("../images/blue_oval.png");
-  height: 70vh;
+  height: 75vh;
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -568,11 +639,27 @@ Member Option Area CSS
     font-size: 13px;
   }
   .btn-primary:hover {
-    background-color: green;
-    border-color: green;
+    background-color: rgb(0, 174, 239);
+    border-color: rgb(8, 40, 110);
   }
   .member-image {
-    padding-left: 0px;
+    position: absolute;
+    bottom: 200px;
+    left: 120px;
+    width: 350px;
+  }
+  .splash-image {
+    position: absolute;
+    top: 190px;
+    right: 190px;
+    width: 250px;
+  }
+
+  .section-title-mobile {
+    display: none;
+  }
+  .member-image-mobile {
+    display: none;
   }
 }
 /*================================================
@@ -580,9 +667,9 @@ Review Text Area CSS
 =================================================*/
 .review-text {
   color: rgb(167, 164, 164);
-  padding: 50px 0;
+  padding: 70px 0;
   h5 {
-    font-size: 24px;
+    font-size: 21px;
   }
 }
 
@@ -602,19 +689,27 @@ ImageCarousel Area CSS
 /*================================================
 Book Now Area CSS
 =================================================*/
-.book-now {
-  color: rgb(8, 40, 110);
-  background-image: url("../images/booknow_background.png");
-  height: 45vh;
+.book-background {
+  height: 10vh;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  position: relative;
+  top: 1px;
+  background-size: 55vw;
+  padding-bottom: 500px;
+}
+.book-now {
+  color: rgb(8, 40, 110);
 
   .btn-primary {
     background-color: rgb(8, 40, 110);
     border-color: rgb(8, 40, 110);
     height: 35px;
     width: 140px;
+  }
+  .btn-primary:hover {
+    background-color: rgb(0, 174, 239);
+    border-color: rgb(0, 174, 239);
   }
 }
 
@@ -674,12 +769,12 @@ Footer Area CSS
     margin-inline-start: auto;
   }
   .btn-primary:hover {
-    background-color: green;
-    border-color: green;
+    background-color: rgb(0, 174, 239);
+    border-color: rgb(36, 64, 114);
   }
   .btn-secondary:hover {
-    background-color: green;
-    border-color: green;
+    background-color: rgb(0, 174, 239);
+    border-color: rgb(36, 64, 114);
   }
   input {
     background: transparent;
@@ -708,15 +803,25 @@ Footer Area CSS
     color: white !important;
     opacity: 1;
   }
+  .footer-logo {
+    padding-bottom: 60px;
+  }
+  .footer-socialmedia {
+    padding-top: 28px;
+  }
+  .footer-newsletter {
+    padding-top: 24px;
+  }
 }
 .copyright {
   background-color: rgb(4, 156, 213);
   color: white;
-  padding-top: 20px;
+  padding-left: 10px;
   font-size: 13px;
 
   p {
     color: white;
+    padding-top: 15px;
   }
 }
 
@@ -903,5 +1008,33 @@ Got Top CSS
     p {
       display: none;
     }
+    .section-title-mobile {
+      display: block;
+      position: relative;
+      right: 110px;
+      bottom: 40px;
+    }
+    .member-image-mobile {
+      display: block;
+      position: absolute;
+      width: 50%;
+      left: 100px;
+      z-index: 0;
+    }
+    .section-title {
+      display: none;
+    }
+    .splash-image {
+      display: none;
+    }
+    .member-image {
+      display: none;
+    }
+  }
+  .splash-banner {
+    display: none;
+  }
+  .splash-header {
+    display: none;
   }
 }
