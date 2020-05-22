@@ -1,13 +1,14 @@
 import React from "react";
 import { FaMapSigns, FaRegCalendarAlt } from "react-icons/fa";
 import DatePicker from "react-datepicker";
-import { FiPlayCircle, FiUsers } from "react-icons/fi";
+import { FiUsers } from "react-icons/fi";
 import "react-datepicker/dist/react-datepicker.css";
 import QuantitySelector from "../QuantitySelector/QuantitySelector";
 import banner from "../../assets/images/banners/home.png";
 import splash from "../../assets/images/splash-graphic-1.png";
 import splash1 from "../../assets/images/header-splash.png";
 import playIcon from "../../assets/images/play-video-icon.svg";
+import activity from "../../assets/images/search-activity.svg";
 
 const Banner = ({ bannerImage, title, subTitle }) => {
   const [startDate, setStartDate] = React.useState(new Date());
